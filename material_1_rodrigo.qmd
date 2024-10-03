@@ -1,0 +1,158 @@
+---
+title: "Material 1 Rodrigo: Inicios de R"
+format: pdf
+editor: visual
+---
+
+## ![](bat.jpg)
+
+# Manual de R inicio
+
+------------------------------------------------------------------------
+
+1. **Instalación de R y RStudio**
+
+    **Paso 1:** Descargar R\
+    R es el lenguaje que utilizarás para analizar datos. Para instalarlo:
+
+    -   Ve a la página oficial de R: https://cran.r-project.org/
+
+    -   Elige el sistema operativo que usas (Windows, Mac o Linux).
+
+    -   Sigue las instrucciones para la instalación.
+
+    **Paso 2:** Descargar RStudio\
+    RStudio es un entorno de desarrollo integrado (IDE) para trabajar con R de manera más cómoda.
+
+    -   Ve a https://posit.co/download/rstudio-desktop/
+
+    -   Descarga la versión gratuita de RStudio Desktop.
+
+    -   Instálalo como cualquier otra aplicación en tu sistema.
+
+    > **Tip de Batman**: R es como la Batcomputadora, una herramienta poderosa por sí sola, pero RStudio es tu Batcueva, ¡donde puedes organizar y manejar todo de forma más eficiente!
+
+2.   **Ventajas de RStudio y cómo abrirlo**
+
+```         
+Una vez que tengas R y RStudio instalados, abre RStudio (lo puedes buscar en tu sistema operativo). Al abrirlo, notarás varias secciones:
+
+-   **Script Editor:** Donde escribes y guardas tu código.
+
+-   **Consola:** Para ejecutar comandos en tiempo real.
+
+-   **Environment:** Muestra los objetos que has creado.
+
+-   **Files/Plots/Packages/Help:** Para ver gráficos, paquetes instalados, archivos y acceder a la documentación.
+
+> **Ventaja principal de RStudio**: Organiza tu trabajo en un solo lugar, facilitando tu flujo de trabajo, desde escribir código hasta visualizar gráficos.
+```
+
+2.   **Instalar Paqueterías en R**
+
+    Las paqueterías son como los gadgets de Batman: agregan funcionalidades específicas a R. Para instalar una paquetería, utiliza la función `install.packages()` en la consola.
+
+    Ejemplo: Si necesitas trabajar con datos, `dplyr` es un paquete útil. Instálalo así:
+
+```{r, eval=FALSE}
+install.packages("dplyr")
+
+```
+
+Para cargar una paquetería (después de haberla instalado):
+
+```{r}
+library(dplyr)
+
+```
+
+4.   **Tipos de Datos en R**
+
+    R maneja varios tipos de datos. Aquí tienes los más comunes:
+
+    -   **Numéricos**: Números, por ejemplo: `42`, `3.14`.
+
+    -   **Cadenas de texto**: Secuencias de caracteres, por ejemplo: `"Batman"`, `"Ciudad Gótica"`.
+
+    -   **Lógicos**: Verdadero (`TRUE`) o falso (`FALSE`).
+
+    -   **Factores**: Variables categóricas, como niveles o etiquetas.
+
+    > **Ejemplo**: Si Bruce Wayne quisiera organizar sus gadgets, los clasificaría en categorías usando factores.
+
+5.   **Tipos de Objetos en R**
+
+    -   **Vectores**: Secuencias de datos del mismo tipo. Por ejemplo:
+
+```{r}
+        gadgets <- c("Batarang", "Batmobile", "Grapple Gun")
+
+```
+
+```         
+-   **Matrices**: Vectores multidimensionales. Son útiles para datos numéricos en 2D.
+
+
+-   **Data frames**: Estructuras bidimensionales donde puedes tener diferentes tipos de datos, ideales para bases de datos.
+```
+
+```{r}
+bat_gear <- data.frame(
+  gadget = c("Batarang", "Batmobile", "Grapple Gun"),
+  cantidad = c(5, 1, 3)
+)
+
+```
+
+-   **Listas**: Conjuntos de objetos que pueden ser de diferentes tipos.
+
+```{r}
+bat_lista <- list("Batarang", 42, TRUE)
+
+```
+
+------------------------------------------------------------------------
+
+#### **Operaciones Básicas en R**
+
+Puedes realizar todo tipo de operaciones con tus datos:
+
+-   **Sumas y restas**:
+
+```{r}
+5 + 7 
+
+```
+
+-   Operaciones logicas:
+
+```{r}
+5 > 3  # Verdadero (TRUE)
+
+```
+
+-   Subsetting **(Seleccionar elementos específicos)**: Si quieres ver el primer gadget de Batman:
+
+```{r}
+gadgets[1]
+
+```
+
+#### 7. **Exploración de Datos**
+
+La exploración de datos en R te permite identificar tendencias, valores atípicos y patrones. Empezamos con un conjunto de datos.
+
+**Ejemplo**: Usando el dataset `mtcars` que viene incluido en R.
+
+```{r}
+data(mtcars)
+head(mtcars)  # Ver las primeras filas del dataset
+```
+
+Para visualizar la relación entre variables, puedes usar gráficos básicos. Por ejemplo, para ver cómo la velocidad de los coches se relaciona con el consumo de gasolina:
+
+```{r}
+plot(mtcars$mpg, mtcars$hp, main="Relación entre MPG y HP", xlab="Millas por galón", ylab="Caballos de fuerza")
+```
+
+**Tip de Batman**: La exploración de datos es como analizar las pistas de un crimen. ¡Mira de cerca para descubrir qué historia te están contando los datos!
