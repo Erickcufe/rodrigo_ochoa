@@ -6,14 +6,17 @@ editor: visual
 
 ## ![](bat.jpg)
 
+------------------------------------------------------------------------
+
 # Manual de R inicio
+
+------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 
 1.  **Instalación de R y RStudio**
 
-    **Paso 1:** Descargar R\
-    R es el lenguaje que utilizarás para analizar datos. Para instalarlo:
+    **Paso 1:** Descargar R R es el lenguaje que utilizarás para analizar datos. Para instalarlo:
 
     -   Ve a la página oficial de R: https://cran.r-project.org/
 
@@ -21,8 +24,7 @@ editor: visual
 
     -   Sigue las instrucciones para la instalación.
 
-    **Paso 2:** Descargar RStudio\
-    RStudio es un entorno de desarrollo integrado (IDE) para trabajar con R de manera más cómoda.
+    **Paso 2:** Descargar RStudio RStudio es un entorno de desarrollo integrado (IDE) para trabajar con R de manera más cómoda.
 
     -   Ve a https://posit.co/download/rstudio-desktop/
 
@@ -34,7 +36,6 @@ editor: visual
 
 2.  **Ventajas de RStudio y cómo abrirlo**
 
-```         
 Una vez que tengas R y RStudio instalados, abre RStudio (lo puedes buscar en tu sistema operativo). Al abrirlo, notarás varias secciones:
 
 -   **Script Editor:** Donde escribes y guardas tu código.
@@ -46,15 +47,12 @@ Una vez que tengas R y RStudio instalados, abre RStudio (lo puedes buscar en tu 
 -   **Files/Plots/Packages/Help:** Para ver gráficos, paquetes instalados, archivos y acceder a la documentación.
 
 > **Ventaja principal de RStudio**: Organiza tu trabajo en un solo lugar, facilitando tu flujo de trabajo, desde escribir código hasta visualizar gráficos.
-```
 
 2.  **Instalar Paqueterías en R**
 
-```         
 Las paqueterías son como los gadgets de Batman: agregan funcionalidades específicas a R. Para instalar una paquetería, utiliza la función `install.packages()` en la consola.
 
 Ejemplo: Si necesitas trabajar con datos, `dplyr` es un paquete útil. Instálalo así:
-```
 
 ```{r, eval=FALSE}
 install.packages("dplyr")
@@ -70,7 +68,6 @@ library(dplyr)
 
 4.  **Tipos de Datos en R**
 
-```         
 R maneja varios tipos de datos. Aquí tienes los más comunes:
 
 -   **Numéricos**: Números, por ejemplo: `42`, `3.14`.
@@ -82,25 +79,19 @@ R maneja varios tipos de datos. Aquí tienes los más comunes:
 -   **Factores**: Variables categóricas, como niveles o etiquetas.
 
 > **Ejemplo**: Si Bruce Wayne quisiera organizar sus gadgets, los clasificaría en categorías usando factores.
-```
 
 5.  **Tipos de Objetos en R**
 
-```         
 -   **Vectores**: Secuencias de datos del mismo tipo. Por ejemplo:
-```
 
 ```{r}
         gadgets <- c("Batarang", "Batmobile", "Grapple Gun")
 
 ```
 
-```         
 -   **Matrices**: Vectores multidimensionales. Son útiles para datos numéricos en 2D.
 
-
 -   **Data frames**: Estructuras bidimensionales donde puedes tener diferentes tipos de datos, ideales para bases de datos.
-```
 
 ```{r}
 bat_gear <- data.frame(
