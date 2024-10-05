@@ -10,7 +10,7 @@ editor: visual
 
 ------------------------------------------------------------------------
 
-1. **Instalación de R y RStudio**
+1.  **Instalación de R y RStudio**
 
     **Paso 1:** Descargar R\
     R es el lenguaje que utilizarás para analizar datos. Para instalarlo:
@@ -32,7 +32,7 @@ editor: visual
 
     > **Tip de Batman**: R es como la Batcomputadora, una herramienta poderosa por sí sola, pero RStudio es tu Batcueva, ¡donde puedes organizar y manejar todo de forma más eficiente!
 
-2.   **Ventajas de RStudio y cómo abrirlo**
+2.  **Ventajas de RStudio y cómo abrirlo**
 
 ```         
 Una vez que tengas R y RStudio instalados, abre RStudio (lo puedes buscar en tu sistema operativo). Al abrirlo, notarás varias secciones:
@@ -48,11 +48,13 @@ Una vez que tengas R y RStudio instalados, abre RStudio (lo puedes buscar en tu 
 > **Ventaja principal de RStudio**: Organiza tu trabajo en un solo lugar, facilitando tu flujo de trabajo, desde escribir código hasta visualizar gráficos.
 ```
 
-2.   **Instalar Paqueterías en R**
+2.  **Instalar Paqueterías en R**
 
-    Las paqueterías son como los gadgets de Batman: agregan funcionalidades específicas a R. Para instalar una paquetería, utiliza la función `install.packages()` en la consola.
+```         
+Las paqueterías son como los gadgets de Batman: agregan funcionalidades específicas a R. Para instalar una paquetería, utiliza la función `install.packages()` en la consola.
 
-    Ejemplo: Si necesitas trabajar con datos, `dplyr` es un paquete útil. Instálalo así:
+Ejemplo: Si necesitas trabajar con datos, `dplyr` es un paquete útil. Instálalo así:
+```
 
 ```{r, eval=FALSE}
 install.packages("dplyr")
@@ -66,23 +68,27 @@ library(dplyr)
 
 ```
 
-4.   **Tipos de Datos en R**
+4.  **Tipos de Datos en R**
 
-    R maneja varios tipos de datos. Aquí tienes los más comunes:
+```         
+R maneja varios tipos de datos. Aquí tienes los más comunes:
 
-    -   **Numéricos**: Números, por ejemplo: `42`, `3.14`.
+-   **Numéricos**: Números, por ejemplo: `42`, `3.14`.
 
-    -   **Cadenas de texto**: Secuencias de caracteres, por ejemplo: `"Batman"`, `"Ciudad Gótica"`.
+-   **Cadenas de texto**: Secuencias de caracteres, por ejemplo: `"Batman"`, `"Ciudad Gótica"`.
 
-    -   **Lógicos**: Verdadero (`TRUE`) o falso (`FALSE`).
+-   **Lógicos**: Verdadero (`TRUE`) o falso (`FALSE`).
 
-    -   **Factores**: Variables categóricas, como niveles o etiquetas.
+-   **Factores**: Variables categóricas, como niveles o etiquetas.
 
-    > **Ejemplo**: Si Bruce Wayne quisiera organizar sus gadgets, los clasificaría en categorías usando factores.
+> **Ejemplo**: Si Bruce Wayne quisiera organizar sus gadgets, los clasificaría en categorías usando factores.
+```
 
-5.   **Tipos de Objetos en R**
+5.  **Tipos de Objetos en R**
 
-    -   **Vectores**: Secuencias de datos del mismo tipo. Por ejemplo:
+```         
+-   **Vectores**: Secuencias de datos del mismo tipo. Por ejemplo:
+```
 
 ```{r}
         gadgets <- c("Batarang", "Batmobile", "Grapple Gun")
